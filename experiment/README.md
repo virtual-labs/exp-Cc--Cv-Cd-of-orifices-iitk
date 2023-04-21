@@ -1,190 +1,77 @@
-## README
+This folder has 
 
-## Quiz
-### 1. Introduction
-This part of the experiment is specifically for assessment purposes. This allows for the creation of a quiz with multiple choice single answer questions.  
-These can be
-* Pretest - Pre requisite quizzes
-* Posttest - Testing the learning
-* Learning Unit Quizzes - Quizzes to test the section's learning.
-The format for the same is discussed below.
+### Aim: 
+To determine the co-efficient of discharge (Cd), co-efficient of velocity (Cv) of orifice and co-efficient of contraction(Cc).
 
-### 2. Target Audience
-This guide is meant for anyone creating a virtual lab and wanting to have a quiz section.
+### THEORY
 
-### 3. Structure of quiz
-The data for the quiz needs to be added to a json file pertaining the following specifications.
-1. The quiz needs to have an array of objects, each object representing a question. As shown below
-```
-"questions" : [
-    {
-        "question" : "What is 1+2 ?",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```
-### 4. Quiz V2.0 (Enhancements done)
-The new format of quiz has multiple new additions. The details for which have been described below.  
-The format of json would be as linked [here](./pretest.json)  
+Orifice is an opening or a hole of any size, shape or form through which liquid flow such that its upper edge remains below the free surface of the liquid. Orifices are used for measurement of control of flow. Orifices may have any shape but generally they are circular, square or rectangular.
 
-First we will look at the additional fields added  
+When a liquid flows from a vessel or a tank, through an orifice it changes its direction. Due to this change of direction of the liquid, the jet is acted upon by lateral or side forces, which gradually reduce its area up to certain section. This area does not reduce further beyond, which the jet ceases and streamlines, first become parallel is known as the vena contracta.
 
-### 4.1 Fields 
-* Mandatory Fields
-    * [version](#42-version) - Without which the enhanced quiz will not be rendered. 
-    * [levels](#44-levels) -  Adds difficulty level to each question (Allows for filtering)
+<img src="images/test3.jpg"/>
 
-* Optional Fields
-    * [explanations](#43-explanations) - Adds an explanation to each answer. If wrong answer is choosen, only it's explanation pops up.  If correct answer is choosen, all available explanations pop up.  
+### Actual Discharge (Qa): 
+The water flowing through the section of a pipe or a channel under the steady state conditions is collected in a collecting tank for a known time t. The rise of water level in the collecting tank is noted down. The actual discharge is
+<br>
+<img src="images/test.png"/>
 
-### 4.2 Version
-The very first field is absolutely necessary. This ensures that the quiz supports the new features.
-```
-"version": 2.0
-```   
+### Coefficient of Discharge (Cd): 
+The ratio of actual discharge (Qa) through an orifice to the theoretical discharge (Qt) is known as coefficient of discharge. It is denoted by Cd.
 
-### 4.3 Explanations
-Just like we mention answers, we can have a section for explanation so that they show up after an answer is marked. This is optional and can completely be left out. The three ways of defining (Assuming there are 4 answers a, b, c, d):
+<img src="images/test2.png"/>
 
-1. All answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "b" : "Explanation 2"
-    "c" : "Explanation 3"
-    "d" : "Explanation 4"
-},
-```  
-2. Some answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "d" : "Explanation 4"
-},
-```
+### Coefficient of Velocity (Cv): 
+The ratio of actual velocity (V) of the jet at vena contracta to the theoretical velocity (Vth) is known as ‘coefficient of velocity’. It is denoted by Cv.
 
-3. No answers have explanations
-```
-/* Can be excluded from json */
-```  
+<img src="images/test6.png"/>
 
+### DESCRIPTION
 
-### 4.4 Levels
-Adds an ability to filter questions based on difficulty levels. This is mandatory and has to be mentioned for each question.  
-The three available difficulty levels are:
-```
-['beginner', 'intermediate', 'advanced']
-```
-Using any other will not work. The format for the same:
-```
-"difficulty" : "beginner"
-```
+The set up consists of a sump tank, measuring tank and constant head tank. Orifice is provided with the set up that can be fixed at the constant head tank one at a time. Water is circulated from the sump tank through centrifugal pump. Constant heat tank and measuring tank are provided with piezometer with scale for level measurement. A measuring arrangement is provided to measure the flow pattern, through orifice, in horizontal and vertical direction. Discharge is measured by measuring tank and stop watch.
 
-### 5. Tips
-1. An extra functionality of explanation is the ability to add an Rich Text (HTML Formatted). It will work just like in html.  
-This could be used for
-    a. Adding hyper links
-    b. Formatting text etc.
-```
-"explanations": {
-    "a" : "Explanation 1  <a href='www.google.com'>here</a>",
-    "b" : "Explanation 2"
-},
-```
-> This can be done in either of explanation, answer and the question.
-An example for the same can be found here: source | website
+### PROCEDURE
 
-2. Multi Correct
-To mimic the functionality of multi correct questions, one can add options as part of the question itself, and the actual answer options can be like : 
-```
-    "answers" : 
-    {
-        "a" : "both i and ii",
-        "b" : "All i, ii, iii, iv",
-        "c" : "Only i",
-        "d" : "None of the above"
-    }
-```
-An example for the same can be found here: source | website
+1.	Clean the apparatus and make all tanks free from dust.
+2.	Close all the valves.
+3.	Fill sump tank ¾ with clean water and ensure that no foreign particles are there. 
+4.	Open by-pass valve.
+5.	Ensure that all On/Off switch given on the panel are at OFF position.
+6.	Switch on the main power supply & switch ON the pump.
+7.	Operate the flow control valve and by-pass valve to maintain the head of water in constant head tank at particular flow through orifice.
+8.	Measure pointer gauge reading at the inlet and end of the jet of water, coming out from the constant head tank.
+9.	Measure the flow rate of water by measuring tank and stop watch.
+10.	Repeat the experiment for different water head.
+11.	Repeat the experiment for different orifice.
 
-3. Image Support  
-You can add images to both question and answers, there can be multiple cases of the same. The following examples can be followed.  
-* **Image in question** : Add img tag in question.
-```
-"questions" : [
-    {
-        "question" : "<img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
+### DATA
 
-* **Image and Text in question** : Add br tag and img tag in question after text. 
-```
-"questions" : [
-    {
-        "question" : "This is an example question <br><img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
-> The same two cases apply for answers too.
-**Make sure the image aspect ratio remains constant and good to maintain the structure**
+Area of measuring tank = 0.077 m2
+Diameter of the orifice (d) = 0.015 m
+<img src="images/test7.png"/>
 
-### 6. Manual Validation of Quiz Json (wrt version 2.0)
-This is till the automatic validation is set up.
-* The first field has to be version with 2 or 2.0 as value.
-* The questions needs to be an array of objects containing questions.
-* Each question object should hav a question field, answers field, difficulty field and correctAnswer field.
-    * question : Should be a string
-    * answer : Should be an object containing options, and each option should be a string.
-    * difficulty : should be a string and should have values from ["beginner", "intermerdiate", "advanced"]
-    * correctAnswer : Should be a string and it's value should be present in keys of one of the answer.
-* If explanation is present it has to be an object and needs to follow the description of answer object.  
+### OBSERVATIONS
 
-### 7. Test Cases
-- [x] Using the mentioned quiz format  
-- [x] Using the old quiz json format
-- [ ] Not including the version in json
-- [ ] Including incorrect version in json 
-- [ ] Including correct version but following old format 
-- [x] Difficulty not mentioned
-- [x] Incorrect difficulty level mentioned
-- [x] explanation not provided for all options
-- [x] explanation empty
-- [x] explanation object not defined
-- [x] HTML in quuestion (tags like hyper links, bold etc)
-- [x] HTML in answer (tags like hyper links, bold etc)
-- [x] HTML in explanation (tags like hyper links, bold etc)
-- [x] On wrong annswer only wrong answer is colored red
-- [x] On correct answer all red color resets
-- [x] Combination of filters working properly
-- [x] If all questions have same difficulty, filter option should be hidden.
-- [x] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
-- [x] On wrong answer only explanation of wrong answer is shown
-- [x] On correct answer all available explanations are shown
+Initial reading of horizontal scale X0 = _0____ cm
+Initial reading of vertical scale Y0 = __0___ cm
+Reading on the piezometer at the level on the centre of orifice = 8 cm
+<img src="images/table.png" />
 
-### 8. TODO
-* Add automatic schema validation
-* Link to source files implementing the above tips.
+### CALCULATIONS
+
+<img src="images/cal.png"/>
+
+### RESULTS
+
+Coefficient of discharge of orifice (Cd) = ________
+Coefficient of velocity of orifice (Cv) = ________
+Co-efficient of contraction (Cc) = ________
+
+### PRECAUTIONS
+
+1.	Never run the apparatus if power supply is less than 180 volts and above 230 volts.
+2.	Conduct the experiment when water gets stable.
+3.	Always use clean water.
+4.	To prevent clogging of moving parts, run pump at least once in a fortnight.
+5.	Drain the apparatus completely after experimentation.
+6.	Always keep apparatus free from dust.
