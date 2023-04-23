@@ -4,7 +4,7 @@
 <b>Discipline | <b>Chemistry
 :--|:--|
 <b> Lab | <b> Fluid Mechanics
-<b> Experiment|     <b> Determination of metacentric height
+<b> Experiment|     <b> To determine the co-efficient of discharge (Cd), co-efficient of velocity (Cv) of orifice and co-efficient of contraction(Cc).
 
 ### About the Experiment 
 
