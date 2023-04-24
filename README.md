@@ -1,7 +1,7 @@
 ## Introduction
 
 
-<b>Discipline | <b>Chemistry
+<b>Discipline | <b>Chemical Engineering
 :--|:--|
 <b> Lab | <b> Fluid Mechanics
 <b> Experiment|     <b> To determine the co-efficient of discharge (Cd), co-efficient of velocity (Cv) of orifice and co-efficient of contraction(Cc).
