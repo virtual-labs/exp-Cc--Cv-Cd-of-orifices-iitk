@@ -14,7 +14,7 @@ To determine experimentally the metacentric height of a flat bottomed pontoon.
 :--|:--|
 <b> Institute | <b>  Meerut Institute of Engineering and Technology, Meerut
 <b> Email id|     <b> nsharma.iitr@gmail.com
-<b> Department |  Chemistry
+<b> Department |  Chemical Engineering
 
 ### Contributors List
 
