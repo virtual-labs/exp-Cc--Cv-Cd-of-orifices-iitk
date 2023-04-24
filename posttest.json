@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The ratio of actual discharge of a jet of water at vena-contracta to the theoretical discharge is known as ?",
+      "answers": {
+        "a": "co-efficient of discharge",
+        "b": "co-efficient of velocity",
+        "c": "co-efficient of contraction",
+        "d": "co-efficient of viscosity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The ratio of actual velocity of a jet of water at vena-contracta to the theoretical velocity is known as ?",
+      "answers": {
+        "a": "co-efficient of discharge",
+        "b": "co-efficient of velocity",
+        "c": "co-efficient of contraction",
+        "d": "co-efficient of viscosity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Orifices are used to measure ?",
+      "answers": {
+        "a": "velocity",
+        "b": "pressure",
+        "c": "rate of flow",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The co-efficient of discharge (Cd)?",
+      "answers": {
+        "a": "for an orifice is more than that for a mouthpiece",
+        "b": "for internal mouthpiece is more than that for external mouthpiece",
+        "c": "for a mouthpiece is more than that for an orifice",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The ratio of the area of the jet of water at vena-contracta to the area of orifice is known as ?",
+      "answers": {
+        "a": "co-efficient of discharge",
+        "b": "co-efficient of velocity",
+        "c": "co-efficient of contraction",
+        "d": "co-efficient of viscosity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. In case of flow through orifices, the coefficient of velocity at vena-contacta is",
+      "answers": {
+        "a": "Equal to zero",
+        "b": "Equal to one",
+        "c": "Greater than one",
+        "d": "Less than one"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

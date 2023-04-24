@@ -1,0 +1,246 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <title>Experiment: Flow through Orifice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <center>
+    <h1 style="color: red;"><u>
+        Experiment : Flow through Orifice
+      </u>
+    </h1>
+  </center>
+  <div id="container">
+    <center>
+      <div id="struct">
+        <img src="./images/Lab1.png" alt="" class="baseimg">
+        
+        <div id="value">
+          The value of X is  <span id="demo"></span>cm
+        </div>
+        <div id="value2">
+          
+          The value of Y is <span id="range-value"></span>cm
+        </div>
+        <p style="background-color: yellow; position: absolute; top:50; left:270; border:1px solid black;">Move scale to get value of X</p>
+        <div class="slider-container">
+          <input type="range" min="1" max="100" value="50" step="0.5" class="slider" id="myRange">
+          
+        </div>
+        <div class="range-slider">
+          <input class="input-range" orient="vertical" type="range" step="0.5" value="50" min="1" max="100" id="rangey">
+          
+      </div>
+      <p style="background-color: yellow; position: absolute; top:150; right:100;border:1px solid black;">Move range button <br> to get value of Y</p>
+
+
+        <label id="labFlow"></label>
+        <div id="shower"></div>
+
+        <div id="mot1" class="horz-water"></div>
+        <div id="mot26" class="horz-water"></div>
+        <div id="mot13" class="horz-water"></div>
+        <!--horizontal-->
+
+        <div id="mot2" class="horz-water"></div>
+        <div id="mot3" class="horz-water"></div>
+        <div id="mot4" class="horz-water"></div>
+        <div id="mot5" class="horz-water"></div>
+        <div id="mot6" class="horz-water"></div>
+        <div id="mot7" class="horz-water"></div>
+
+        <div id="mot8" class="horz-water"></div>
+        <div id="mot9" class="horz-water"></div>
+        <div id="mot10" class="horz-water"></div>
+        <div id="mot11" class="horz-water"></div>
+        <div id="mot12" class="horz-water"></div>
+        <div id="mot14" class="horz-water"></div>
+
+        <div id="mot19"></div>
+        <div id="mot20"></div>
+        <div id="mot18" style="top: 199px;left: 207px;" class="horz-water2 leftfill"></div>
+        <div id="mot17" style="top: 120px;left: 159px; width: 88px; height:134px;" class="horz-water2 leftfill"></div>
+        <div id="mot16" style="top: 270px; left: 144px;" class="horz-water2 leftfill"></div>
+        <div id="mot15" style="top: 278px;left: 174px;" class="horz-water2 leftfill"></div>
+
+        <div id="mot21" style="top: 214px;
+        left: 268px;
+        width: 70px;
+        height: 25px;
+        opacity: 0;
+        transform: rotate(8deg);" class="horz-water2 mid"></div>
+        <div id="mot22" style="top: 223px;left: 326px;width: 60px;height: 27px;transform: rotate(22deg);"
+          class="horz-water2 mid"></div>
+        <div id="mot23" style="top: 239px;left: 377px;width: 60px;height: 28px; transform:rotate(21deg)" class="horz-water2 mid"></div>
+        <div id="mot24" style="top: 273px; transform: rotate(14deg); left: 491px; width: 60px; height: 22px;" class="horz-water2 leftfill"></div>
+        <div id="mot25" style="top: 262px; transform:rotate(22deg); left: 425px; width: 60px; height: 20px;" class="horz-water2 leftfill"></div>
+        <div id="mot14" class="horz-water"></div>
+        <div id="mot31" class="horz-water2 leftfill"></div>
+        <div id="mot26" style="top: 290px; left: 500px;" class="horz-water2 leftfill"></div>
+
+        <div id="mot29" style="top: 362px;left: 614px;transform: rotate(90deg);" class="horz-water2 leftfill"></div>
+
+        <div id="mot28" style="top: 416px; left: 609px;" class="horz-water2 leftfill"></div>
+        <div id="mot30" style="top: 318px; left: 556px; height: 40;" class="horz-water2 leftfill"></div>
+
+        <div id="mot27"
+          style="top: 278px;left: 613px;width: 77px;background-size: 150%;transform: rotate(90deg);"
+          class="horz-water2"></div>
+        <div id="mot31" style="
+              top: 235px;
+              left: 645px;
+              width: 20px;
+              
+              background-size: 150%;
+            " class="horz-water2"></div>
+        <div id="mot32" style="
+              top: 280px;
+              left: 645px;
+              width: 20px;
+              
+              background-size: 150%;
+            " class="horz-water2"></div>
+        <div id="mot33" style="
+              top: 310px;
+              left: 645px;
+              width: 20px;
+              
+              background-size: 150%;
+            " class="horz-water2"></div>
+        <div id="mot34" style="
+            top: 457px;left: 551px;width: 19px;background-size: 150%;
+            " class="horz-water2"></div>
+
+        <div id="mot35" style="
+        top: 394px;
+        left: 436px;
+        width: 72px;
+        height: 22px;
+            " class="horz-water2"></div>
+        <div id="mot36" style="
+        top: 322px;
+        left: 340px;
+        width: 16px;
+        height: 176px;
+        background-size: 120%;
+        transform: rotate(90deg);
+            " class="horz-water2"></div>
+
+
+
+        <label id="outlab">
+          turn the outlet valve to set the flow rate</label>
+        <button id="outlet" class="valve" onclick="clickedValve()"></button>
+        <label id="gatelab">turn the gate valve off</label>
+
+        <button id="motbut" class="valve" onclick="clickedMot()"></button>
+        <label id="motlab">push the motor button to start</label>
+        <button id="motbut" class="valve" onclick="clickedMot()"></button>
+      </div>
+    </center>
+
+    <center>
+      <button class="tab-button" id="button2" onclick="datasheet()" disabled>Record</button>
+      <!-- <button class="tab-button" onclick="tableSecond()">Record</button> -->
+    </center>
+    <div id="table">
+
+      <h2>Data Sheet</h2>
+
+
+      <table id="tab">
+        <tr>
+          <th rowspan="2" >SNo.</th>
+          <th rowspan="2" >Head(H)</th>
+          <th colspan="2">jet co-ordinates</th>
+          <!-- <th colspan="2">Net co-ordinates</th> -->
+          <th rowspan="2">Time Taken for <br>20 cm rise 't'</th>
+          <th rowspan="2">Q<sub>a</sub>= A x R / t</th>
+          <th rowspan="2">Q<sub>th</sub>= C âˆšH</th>
+          <th rowspan="2">C<sub>d</sub>= Q<sub>a</sub>/Q<sub>th</sub></th>
+          <th rowspan="2">C <sub>v</sub> = x / âˆš4yH</th>
+          <th rowspan="2">C <sub>c</sub> = cd/cv</th>
+
+
+        </tr>
+        <tr>
+          <td id="dm1">Initial Reading(x)</td>
+          <td id="dm2">Final Reading(y)</td>
+          <!-- <td id="ds1">
+              x = x<sub>2</sub> - x<sub>1</sub> / 100
+            </td>
+            <td id="ds1">
+              y = y<sub>2</sub> - y<sub>1</sub> / 100
+            </td> -->
+
+        </tr>
+
+        <tr>
+          <td id="sno"> </td>
+          <td id="height"> </td>
+          <td id="x"> </td>
+          <td id="y"> </td>
+          <td id="t"> </td>
+          <td id="qa"> </td>
+          <td id="qth"> </td>
+          <td id="cd"> </td>
+          <td id="cv"> </td>
+          <td id="cc"> </td>
+        </tr>
+        <tr>
+          <td id="sno1"> </td>
+          <td id="height1"> </td>
+          <td id="x1"> </td>
+          <td id="y1"> </td>
+          <td id="t1"> </td>
+          <td id="qa1"> </td>
+          <td id="qth1"> </td>
+          <td id="cd1"> </td>
+          <td id="cv1"> </td>
+          <td id="cc1"> </td>
+        </tr>
+        <tr>
+          <td id="sno2"> </td>
+          <td id="height2"> </td>
+          <td id="x2"> </td>
+          <td id="y2"> </td>
+          <td id="t2"> </td>
+          <td id="qa2"> </td>
+          <td id="qth2"> </td>
+          <td id="cd2"> </td>
+          <td id="cv2"> </td>
+          <td id="cc2"> </td>
+        </tr>
+        <tr>
+          <td id="sno3"> </td>
+          <td id="height3"> </td>
+          <td id="x3"> </td>
+          <td id="y3"> </td>
+          <td id="t3"> </td>
+          <td id="qa3"> </td>
+          <td id="qth3"> </td>
+          <td id="cd3"> </td>
+          <td id="cv3"> </td>
+          <td id="cc3"> </td>
+        </tr>
+   
+      </table>
+      <br /><br />
+
+
+
+    </div>
+
+
+    <!--button onclick="clicked()">Plot</button><br /-->
+  </div>
+  </div>
+  <script src="js/record.js"></script>
+
+  <script src="js/valve.js"></script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>
