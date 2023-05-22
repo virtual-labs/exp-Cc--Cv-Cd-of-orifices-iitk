@@ -9,4 +9,4 @@
 8.	Measure pointer gauge reading at the inlet and end of the jet of water, coming out from the constant head tank.
 9.	Measure the flow rate of water by measuring tank and stop watch.
 10.	Repeat the experiment for different water head.
-11.	Repeat the experiment for different orifice.v
+11.	Repeat the experiment for different orifice.
