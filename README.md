@@ -13,7 +13,7 @@ Orifice is an opening or a hole of any size, shape or form through which liquid 
 <b>Name of Developer | <b> Dr. Neha Sharma (MIET Meerut) 
 :--|:--|
 <b> Institute | <b>  Meerut Institute of Engineering and Technology
-<b> Email id|     <b>  	neha.sharma.ch@miet.ac.in
+<b> Email id|     <b> neha.sharma.ch@miet.ac.in
 <b> Department |  	Chemical Engineering
 
 ### Contributors List
