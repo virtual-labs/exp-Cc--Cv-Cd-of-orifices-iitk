@@ -1,10 +1,9 @@
 ## Introduction
 
-
 <b>Discipline | <b>Chemical Engineering
 :--|:--|
 <b> Lab | <b> Chemical Engineering Fluid Mechanics Lab
-<b> Experiment|     <b> Determination of Cc, Cv, Cd of orifices
+<b> Experiment|     <b> Determination of Cc, Cv, Cd of Orifices
 
 ### About the Experiment 
 
