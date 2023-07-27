@@ -20,7 +20,4 @@ The ratio of actual velocity (V) of the jet at vena contracta to the theoretical
 
 <b>DESCRIPTION</b><br><br>
 
-The set up consists of a sump tank, measuring tank and constant head tank. Orifice is provided with the set up that can be fixed at the constant head tank one at a time. Water is circulated from the sump tank through centrifugal pump. Constant heat tank and measuring tank are provided with piezometer with scale for level measurement. A measuring arrangement is provided to measure the flow pattern, through orifice, in horizontal and vertical direction. Discharge is measured by measuring tank and stop watch.<br><br>
-Area of measuring tank = 0.077 m2<br>
-Diameter of the orifice (d) = 0.015 m<br>
-<img src="images/test7.png"/><br>
+The set up consists of a sump tank, measuring tank and constant head tank. Orifice is provided with the set up that can be fixed at the constant head tank one at a time. Water is circulated from the sump tank through centrifugal pump. Constant heat tank and measuring tank are provided with piezometer with scale for level measurement. A measuring arrangement is provided to measure the flow pattern, through orifice, in horizontal and vertical direction. Discharge is measured by measuring tank and stop watch.
