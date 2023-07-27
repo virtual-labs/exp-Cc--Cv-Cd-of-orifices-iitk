@@ -1,14 +1,13 @@
 ## Introduction
 
-
 <b>Discipline | <b>Chemical Engineering
 :--|:--|
-<b> Lab | <b> Fluid Mechanics
-<b> Experiment|     <b> To determine the co-efficient of discharge (Cd), co-efficient of velocity (Cv) of orifice and co-efficient of contraction(Cc).
+<b> Lab | <b> Chemical Engineering Fluid Mechanics Lab
+<b> Experiment|     <b> Determination of Cc, Cv, Cd of Orifices
 
 ### About the Experiment 
 
-To determine experimentally the metacentric height of a flat bottomed pontoon.
+Orifice is an opening or a hole of any size, shape or form through which liquid flow such that its upper edge remains below the free surface of the liquid. Orifices are used for the measurement of control of flow. Orifices may have any shape but generally they are circular, square or rectangular.
 
 <b>Name of Developer | <b> Dr. Neha Sharma
 :--|:--|
@@ -20,5 +19,4 @@ To determine experimentally the metacentric height of a flat bottomed pontoon.
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Atul Pratap | Student | Computer science | MIET | pratapsinghatul111@gmail.com
-2 | . | . | . | . | .
+1 |Veer Pratap Singh| Student | CSE(AI/ML) | Meerut Institute of Engineering and Technology, Meerut | veer.singh.cseaiml.2020@miet.ac.in
