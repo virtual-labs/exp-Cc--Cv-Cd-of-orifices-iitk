@@ -19,5 +19,5 @@ Orifice is an opening or a hole of any size, shape or form through which liquid 
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 |Atul| Student | CSE(AI/ML) | Meerut Institute of Engineering and Technology, Meerut | veer.singh.cseaiml.2020@miet.ac.in
-1 ||  |  |  | 
+1 |Veer Pratap Singh| Student | CSE(AI/ML) | Meerut Institute of Engineering and Technology, Meerut | veer.singh.cseaiml.2020@miet.ac.in
+
