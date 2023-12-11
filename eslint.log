@@ -1,0 +1,133 @@
+
+/home/runner/work/exp-Cc--Cv-Cd-of-orifices-iitk/exp-Cc--Cv-Cd-of-orifices-iitk/experiment/simulation/js/record.js
+   12:10  warning  'datasheet' is defined but never used   no-unused-vars
+   33:7   warning  'qth' is already defined                no-redeclare
+   38:7   warning  'cd' is already defined                 no-redeclare
+   43:7   warning  'cv' is already defined                 no-redeclare
+   47:7   warning  'cc' is already defined                 no-redeclare
+   60:7   warning  't' is already defined                  no-redeclare
+   61:7   warning  'area' is already defined               no-redeclare
+   62:7   warning  'r' is already defined                  no-redeclare
+   63:7   warning  'qa' is already defined                 no-redeclare
+   66:7   warning  'areaor' is already defined             no-redeclare
+   67:7   warning  'g' is already defined                  no-redeclare
+   68:7   warning  'c' is already defined                  no-redeclare
+   69:7   warning  'H' is already defined                  no-redeclare
+   70:7   warning  'qth' is already defined                no-redeclare
+   71:7   warning  'qth' is already defined                no-redeclare
+   75:7   warning  'cd' is already defined                 no-redeclare
+   76:7   warning  'cd' is already defined                 no-redeclare
+   79:7   warning  'de' is already defined                 no-redeclare
+   80:7   warning  'cv' is already defined                 no-redeclare
+   81:7   warning  'cv' is already defined                 no-redeclare
+   84:7   warning  'cc' is already defined                 no-redeclare
+   85:7   warning  'cc' is already defined                 no-redeclare
+  100:7   warning  't' is already defined                  no-redeclare
+  101:7   warning  'area' is already defined               no-redeclare
+  102:7   warning  'r' is already defined                  no-redeclare
+  103:7   warning  'qa' is already defined                 no-redeclare
+  106:7   warning  'areaor' is already defined             no-redeclare
+  107:7   warning  'g' is already defined                  no-redeclare
+  108:7   warning  'c' is already defined                  no-redeclare
+  109:7   warning  'H' is already defined                  no-redeclare
+  110:7   warning  'qth' is already defined                no-redeclare
+  111:7   warning  'qth' is already defined                no-redeclare
+  115:7   warning  'cd' is already defined                 no-redeclare
+  116:7   warning  'cd' is already defined                 no-redeclare
+  119:7   warning  'de' is already defined                 no-redeclare
+  120:7   warning  'cv' is already defined                 no-redeclare
+  121:7   warning  'cv' is already defined                 no-redeclare
+  124:7   warning  'cc' is already defined                 no-redeclare
+  125:7   warning  'cc' is already defined                 no-redeclare
+  140:7   warning  't' is already defined                  no-redeclare
+  141:7   warning  'area' is already defined               no-redeclare
+  142:7   warning  'r' is already defined                  no-redeclare
+  143:7   warning  'qa' is already defined                 no-redeclare
+  146:7   warning  'areaor' is already defined             no-redeclare
+  147:7   warning  'g' is already defined                  no-redeclare
+  147:7   warning  'g' is assigned a value but never used  no-unused-vars
+  148:7   warning  'c' is already defined                  no-redeclare
+  149:7   warning  'H' is already defined                  no-redeclare
+  150:7   warning  'qth' is already defined                no-redeclare
+  151:7   warning  'qth' is already defined                no-redeclare
+  155:7   warning  'cd' is already defined                 no-redeclare
+  156:7   warning  'cd' is already defined                 no-redeclare
+  159:7   warning  'de' is already defined                 no-redeclare
+  160:7   warning  'cv' is already defined                 no-redeclare
+  161:7   warning  'cv' is already defined                 no-redeclare
+  164:7   warning  'cc' is already defined                 no-redeclare
+  165:7   warning  'cc' is already defined                 no-redeclare
+
+/home/runner/work/exp-Cc--Cv-Cd-of-orifices-iitk/exp-Cc--Cv-Cd-of-orifices-iitk/experiment/simulation/js/valve.js
+    4:5   warning  'h1' is defined but never used             no-unused-vars
+    4:9   warning  'h2' is defined but never used             no-unused-vars
+    4:13  warning  'h3' is defined but never used             no-unused-vars
+    4:17  warning  'h4' is defined but never used             no-unused-vars
+    4:21  warning  'h5' is defined but never used             no-unused-vars
+    4:25  warning  'h6' is defined but never used             no-unused-vars
+    4:29  warning  'h7' is defined but never used             no-unused-vars
+    4:33  warning  'h8' is defined but never used             no-unused-vars
+    4:37  warning  'h9' is defined but never used             no-unused-vars
+    4:41  warning  'h10' is defined but never used            no-unused-vars
+    4:46  warning  'h11' is defined but never used            no-unused-vars
+    8:5   warning  'temp' is assigned a value but never used  no-unused-vars
+   12:10  warning  'clickedValve' is defined but never used   no-unused-vars
+   18:11  warning  'j' is not defined                         no-undef
+   19:41  warning  'j' is not defined                         no-undef
+   20:9   warning  'j' is not defined                         no-undef
+   48:10  warning  'clickedMot' is defined but never used     no-unused-vars
+   53:3   warning  'j' is not defined                         no-undef
+   55:9   warning  'j' is not defined                         no-undef
+   56:39  warning  'j' is not defined                         no-undef
+   57:7   warning  'j' is not defined                         no-undef
+   61:13  warning  'j' is not defined                         no-undef
+   62:43  warning  'j' is not defined                         no-undef
+   63:11  warning  'j' is not defined                         no-undef
+   84:10  warning  'clickedgate' is defined but never used    no-unused-vars
+  106:7   warning  'i' is not defined                         no-undef
+  109:9   warning  'ss' is not defined                        no-undef
+  109:19  warning  'i' is not defined                         no-undef
+  110:17  warning  'ss' is not defined                        no-undef
+  111:17  warning  'ss' is not defined                        no-undef
+  117:17  warning  'ss' is not defined                        no-undef
+  120:17  warning  'ss' is not defined                        no-undef
+  123:17  warning  'ss' is not defined                        no-undef
+  126:17  warning  'ss' is not defined                        no-undef
+  129:17  warning  'ss' is not defined                        no-undef
+  132:17  warning  'ss' is not defined                        no-undef
+  136:9   warning  'i' is not defined                         no-undef
+  138:27  warning  'i' is not defined                         no-undef
+  143:11  warning  'i' is not defined                         no-undef
+  153:13  warning  'i' is not defined                         no-undef
+  154:11  warning  'i' is not defined                         no-undef
+  209:10  warning  'i' is not defined                         no-undef
+  209:17  warning  'i' is not defined                         no-undef
+  209:25  warning  'i' is not defined                         no-undef
+  210:37  warning  'i' is not defined                         no-undef
+  220:9   warning  'h' is already defined                     no-redeclare
+  221:9   warning  'height' is already defined                no-redeclare
+  226:9   warning  'h' is already defined                     no-redeclare
+  227:9   warning  'height' is already defined                no-redeclare
+  232:9   warning  'h' is already defined                     no-redeclare
+  233:9   warning  'height' is already defined                no-redeclare
+  238:9   warning  'h' is already defined                     no-redeclare
+  239:9   warning  'height' is already defined                no-redeclare
+  244:9   warning  'h' is already defined                     no-redeclare
+  245:9   warning  'height' is already defined                no-redeclare
+  250:9   warning  'h' is already defined                     no-redeclare
+  251:9   warning  'height' is already defined                no-redeclare
+  256:9   warning  'h' is already defined                     no-redeclare
+  257:9   warning  'height' is already defined                no-redeclare
+  262:9   warning  'h' is already defined                     no-redeclare
+  263:9   warning  'height' is already defined                no-redeclare
+  268:9   warning  'h' is already defined                     no-redeclare
+  269:9   warning  'height' is already defined                no-redeclare
+  274:9   warning  'h' is already defined                     no-redeclare
+  275:9   warning  'height' is already defined                no-redeclare
+  296:10  warning  'dataSheet' is defined but never used      no-unused-vars
+  331:12  warning  'i' is already defined                     no-redeclare
+  426:10  warning  'checktab' is defined but never used       no-unused-vars
+  430:5   warning  'clicked' is not defined                   no-undef
+
+✖ 126 problems (0 errors, 126 warnings)
+
