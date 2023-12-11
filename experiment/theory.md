@@ -18,6 +18,6 @@ The ratio of actual velocity (V) of the jet at vena contracta to the theoretical
 
 <img src="images/test6.png"/><br><br>
 
-<b>DESCRIPTION</b><br><br>
+<b>DESCRIPTION</b><br>
 
 The set up consists of a sump tank, measuring tank and constant head tank. Orifice is provided with the set up that can be fixed at the constant head tank one at a time. Water is circulated from the sump tank through centrifugal pump. Constant heat tank and measuring tank are provided with piezometer with scale for level measurement. A measuring arrangement is provided to measure the flow pattern, through orifice, in horizontal and vertical direction. Discharge is measured by measuring tank and stop watch.
