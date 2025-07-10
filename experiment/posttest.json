@@ -2,32 +2,15 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. The ratio of actual discharge of a jet of water at vena-contracta to the theoretical discharge is known as ?",
+      "question": "1. The coefficient of discharge (Cd) for an orifice meter is typically",
       "answers": {
-        "a": "co-efficient of discharge",
-        "b": "co-efficient of velocity",
-        "c": "co-efficient of contraction",
-        "d": "co-efficient of viscosity"
+        "a": ">1",
+        "b": "<1",
+        "c": "=1",
+        "d": "=0"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. The ratio of actual velocity of a jet of water at vena-contracta to the theoretical velocity is known as ?",
-      "answers": {
-        "a": "co-efficient of discharge",
-        "b": "co-efficient of velocity",
-        "c": "co-efficient of contraction",
-        "d": "co-efficient of viscosity"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -36,71 +19,71 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. Orifices are used to measure ?",
+      "question": "2. Compare to venturi coefficient of discharge (C<sub>d</sub>) for an orifice meter is",
       "answers": {
-        "a": "velocity",
-        "b": "pressure",
-        "c": "rate of flow",
+        "a": "Greater",
+        "b": "Less",
+        "c": "Equal",
+        "d": "No C<sub>d</sub>"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The pressure difference in an orifice meter is measured:",
+      "answers": {
+        "a": "at vena contracta",
+        "b": "at throat",
+        "c": "at entry and exit of orifice meter",
         "d": "none of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "4. The co-efficient of discharge (Cd)?",
+      "question": "4. Which of the following is NOT a component of an orifice meter?",
       "answers": {
-        "a": "for an orifice is more than that for a mouthpiece",
-        "b": "for internal mouthpiece is more than that for external mouthpiece",
-        "c": "for a mouthpiece is more than that for an orifice",
-        "d": "none of the above"
+        "a": "Orifice plate",
+        "b": "Pressure tapping",
+        "c": "Meter tube",
+        "d": "Converging cone"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "5. The ratio of the area of the jet of water at vena-contracta to the area of orifice is known as ?",
-      "answers": {
-        "a": "co-efficient of discharge",
-        "b": "co-efficient of velocity",
-        "c": "co-efficient of contraction",
-        "d": "co-efficient of viscosity"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "6. In case of flow through orifices, the coefficient of velocity at vena-contacta is",
-      "answers": {
-        "a": "Equal to zero",
-        "b": "Equal to one",
-        "c": "Greater than one",
-        "d": "Less than one"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
       "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The orifice diameter is generally kept as:",
+      "answers": {
+        "a": "Same to pipe dia",
+        "b": "Smaller to pipe dia",
+        "c": "Larger to pipe dia",
+        "d": "none of above"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

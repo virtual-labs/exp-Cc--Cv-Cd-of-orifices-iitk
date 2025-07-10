@@ -1,23 +1,9 @@
-Orifice is an opening or a hole of any size, shape or form through which liquid flow such that its upper edge remains below the free surface of the liquid. Orifices are used for measurement of control of flow. Orifices may have any shape but generally they are circular, square or rectangular.<br>
+Orificemeter are devices used for measurement of rate of flow of fluid through a pipe. The basic principle on which orificemeter works is that by reducing the cross- sectional area of flow passage, a pressure difference is created and the measurement of the pressure difference enables the determination of the discharge through the pipe. An orificemeter is a cheaper arrangement for measurement of discharge through pipes and its installation requires a smaller length as compared with other flow. The opening in the form of orifice is provided at the centre of the plate.<br>
 
-When a liquid flows from a vessel or a tank, through an orifice it changes its direction. Due to this change of direction of the liquid, the jet is acted upon by lateral or side forces, which gradually reduce its area up to certain section. This area does not reduce further beyond, which the jet ceases and streamlines, first become parallel is known as the vena contracta.<br><br>
+<img src="images/img_1.png"><br>
 
-<img src="images/test3.jpg"/><br><br>
+An orifice meter consists of a flat circular plate with a circular hole called orifice with is concentric with the pipe axis. The upstream face of the plate is be leveled at an angle lying between 300 and 450. The plate is clamped between the two pipe flanges with be leveled surface facing downstream. Two pressure tappings are provided one on the upstream side of plate and other on the downstream side of the orifice plate. The pressure difference exists between two sections which, can be measured by connecting a differential manometer to the two pressure taps. The discharge coefficient (Cd) can be calculated using formula: <br>
 
-<b>Actual Discharge (Qa):</b> 
-The water flowing through the section of a pipe or a channel under the steady state conditions is collected in a collecting tank for a known time t. The rise of water level in the collecting tank is noted down. The actual discharge is<br><br>
-<img src="images/test.png"/><br><br>
+<img src="images/img_2.png"><br>
 
-<b>Coefficient of Discharge (Cd):</b><br><br>
-The ratio of actual discharge (Qa) through an orifice to the theoretical discharge (Qt) is known as coefficient of discharge. It is denoted by Cd.<br><br>
-
-<img src="images/test2.png"/><br><br>
-
-<b>Coefficient of Velocity (Cv):</b><br><br>
-The ratio of actual velocity (V) of the jet at vena contracta to the theoretical velocity (Vth) is known as ‘coefficient of velocity’. It is denoted by Cv.<br><br>
-
-<img src="images/test6.png"/><br><br>
-
-<b>DESCRIPTION</b><br>
-
-The set up consists of a sump tank, measuring tank and constant head tank. Orifice is provided with the set up that can be fixed at the constant head tank one at a time. Water is circulated from the sump tank through centrifugal pump. Constant heat tank and measuring tank are provided with piezometer with scale for level measurement. A measuring arrangement is provided to measure the flow pattern, through orifice, in horizontal and vertical direction. Discharge is measured by measuring tank and stop watch.
+Where C<sub>d</sub> is coefficient of orifice, a<sub>0</sub> is cross- sectional area of orifice, a<sub>1</sub> is cross-sectional area of pipe, g is the acceleration due to the gravity and ∆h is the difference of head in terms of water. The value of C<sub>d</sub>, in general, depends on the shape of the orifice, d/D, location of pressure tappings (1) and (2), and the Reynolds number, R<sub>e</sub> . Since the first three parameters are fixed in an experimental set- up in a laboratory, C<sub>d</sub> can be said to depend only on the Reynolds number. The Reynolds number is defined as equal to V<sub>d</sub>/μ where V is the velocity of flow at tile orifice (=Q/a). I
