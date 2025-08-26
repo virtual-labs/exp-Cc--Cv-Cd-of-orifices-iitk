@@ -1,387 +1,397 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url('../images/bg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.heading {
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 
-      #struct {
-        position: relative;
-        height: 666px;
-        width: 800px;
-        border: 2px black solid;
-        
-      }
-      .baseimg{
-        position: relative;
-        top: 86px;
-        height: 412px;
-      }
-      #value{
-        position: absolute;
-       right:60;
-      font-weight: bold;
-   
-       top: 100;
-      }
-      #value2{
-        position: absolute;
-        right:60;
-      font-weight: bold;
-   
-       top: 120;
-      }
-      .container {
-        display: flex;
-        flex-direction: row;
-      }
-      .valve {
-        height: 30px;
-        width: 30px;
-        position: absolute;
+}
 
-        border: none;
-        background-color: transparent;
-        background-image: url("../images/valve.svg");
-        background-size: 100%;
-        transition-property: transform;
-        transition-duration: 1s;
-        outline: none;
-      }
-      #outlet {
-           top: 320px;
-    left: 522px;
-      }
-      #motbut {
-        top: 397px;
-        left: 197px;
+.heading h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+  
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
     
-      }
-      #outlab {
-        opacity: 0;
-        top: 180;
-        left: 570;
-        background-color: rgb(230, 230, 62);
-        border: 1px black solid;
-      }
-      #motlab {
-        top: 368px;
-        left: 150px;
-        background-color: rgb(230, 230, 62);
-        border: 1px black solid;
-      }
-      #gatelab {
-        opacity: 0;
-        top: 323px;
-    left: 359px;
-        background-color: rgb(230, 230, 62);
-        border: 1px black solid;
-      }
-      #gatebut {
-        top: 395px;
-        left: 570px;
-      }
-      label {
-        position: absolute;
-      }
-      #labFlow {
-        top: 290px;
-        left: 680px;
-        background-color: rgb(230, 230, 62);
-        border: 1px black solid;
-      }
-      #timer {
-        position: absolute;
-        top: 50px;
-        left: 660px;
-        height: 100px;
-        width: 100px;
-        font-size: 28px;
-      }
-      #piezoDiv {
-        position: absolute;
-        top: 30px;
-        left: 250px;
-        font-size: 12px;
-        font-weight: bold;
-      }
-      #piezoDiv2 {
-        position: absolute;
-        top: 30px;
-        left: 430px;
-        font-size: 12px;
-        font-weight: bold;
-      }
-      #shower {
-        opacity: 0;
-        position: absolute;
-      top:  150px;
-    left: 183px;
+  }
+  
+  .header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .content {
+    display: flex;
+    padding: 20px;
+    min-height: 300px;
+    gap: 20px;
+  }
+  
+  .left-section {
+    width: 30%;
+    /* background-color: #b7b7b7; */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .right-section {
+    width: 70%;
+    /* background-color: #fff3e0; */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .spacer {
+    height: 500px; /* jitni images ka combined height approx ban raha ho */
+  }
+  /* Ab sab images ko position absolute se set karenge */
+  .pipes {
+    position: absolute;
+    top: 0;
+    margin-left: 200px;
+    width: 700px;
+  }
+  
+  .tank {
+    position: absolute;
+    top: 70px; 
+    left: 130px;
+    width: 750px;
+  }
+  
+
+  .motor {
+    position: absolute;
+    top: 5px;
+    left: 88px;
+    width: 900px;
+  }
+  
+  .ball1 {
+    position: absolute;
+    top:30px;
+    left: 580px;
+    width: 80px;
+  }
+  .ball2 {
+    position: absolute;
+    top:30px;
+    left: 700px;
+    width: 80px;
+  }
+  .ball3 {
+    position: absolute;
+    top: 360px;
+    left: 330px;
     width: 60px;
-    height: 40px;
-        background-image: url("../images/shower.gif");
-        background-size: 100%;
-      }
-      .horz-water {
-        position: absolute;
-        background-image: url("../images/water-horizintal.gif");
-      }
-      .fills {
-        position: absolute;
-        background-color: rgba(155, 207, 207, 0.815);
-        width: 5px;
-        height: 10px;
-      }
-      .fillsfin {
-        position: absolute;
-        background-color: rgba(155, 207, 207, 0.815);
-        width: 12px;
-        height: 10px;
-        transition-property: all;
-        transition-duration: 2s;
-        transition: ease;
-      }
-      .horz-water2 {
-        position: absolute;
-        opacity: 0;
-        background-image: url("../images/water-horizintal2.gif");
-      }
-      .mid {
-        background-size: 90%;
-      }
-      .leftfill {
-        left: 140;
-        width: 121px;
-        background-size: 70%;
-        
-      }
-
-      #mot1 {
-        top: 391px;
-        left: 98px;
-        opacity: 0;
-        width:70px;
-        height: 25px;
-        background-size: 120%;
-      }
-      #mot13 {
-        top: 96px;
-        left: 125px;
-        opacity: 0;
-        width: 136px;
-        
-        height: 25px;
-        background-size: 30%;
-      }
-      #mot2 {
-        top:325px;
-    left: 99px;
-    opacity: 0;
-    width: 20px;
-    height: 69px;
-    background-size: 320%;
-      }
-      #mot3 {
-        top: 277px;
-        left: 99px;
-        opacity: 0;
-        width: 20px;
-        height: 40px;
-        background-size: 320%;
-      }
-      #mot4 {
-        top: 236px;
-        left: 99px;
-        opacity: 0;
-        width: 20px;
-        height: 40px;
-        background-size: 320%;
-      }
-      #mot5 {
-        top: 350px;
-        left: 60px;
-        opacity: 0;
-        
-        background-size: 320%;
-      }
-      #mot6 {
-        top: 310px;
-        left: 60px;
-        opacity: 0;
-      
-        background-size: 320%;
-      }
-      #mot7 {
-        top: 270px;
-        left: 60px;
-        opacity: 0;
-        
-        background-size: 320%;
-      }
-      .holder{
-        position: absolute;
-        margin-left: 342px;
-        /* margin-bottom: 9px; */
-        bottom: 447px;
+  }
+  .ball1, .ball2, .ball3 {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .ball-open {
+    transform: rotate(20deg);
+  }
+  
+  .valve1 {
+    position: absolute;
+    top: 290px;
+    left: 395px;
+    width: 40px;
     
-      }
-      .holderimg{
-        width: 58px;
-        height: 151px;
-      }
-      .scale{
-        position: relative;
-        bottom: 338px;
-      }
-      .scaleimg{
-        height: 132px;
-        width: 19px;
-      }
-      #mot31{
-        top: 270px;
-        left: 630px;
-        
-        width: 20px;
-      
-        background-size: 320%;
-      }
-      #mot8 {
-        top: 104px;
-        left: 102px;
-        opacity: 0;
-        height: 50px;
-        width: 18px;
-        background-size: 320%;
-      }
-      #mot9 {
-        top: 190px;
-        left: 98px;
-        opacity: 0;
-        width: 20px;
-        height: 40px;
-        background-size: 320%;
-      }
-      #mot10 {
-        top: 150px;
-        left: 101px;
-        opacity: 0;
-        width: 20px;
-        height: 40px;
-        background-size: 320%;
-      }
+  }
+  .valve2 {
+    position: absolute;
+    top: 250px;
+    left: 433px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .valve2:hover{
+    transform: rotate(90deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .rotameter{
+    position: absolute;
+    top: 85px;
+    left: 208px;
+    width: 600px;
+  }
+  .pipe2{
+    position: absolute;
+    top: 35px;
+    left: 127px;
+    width: 800px;
+  }
+  .thread{
+    position: absolute;
+    top:30px;
+    left: 30px;
+    width: 1000px;
+  }
+  .tube{
+    position: absolute;
+    top:210px;
+    left: 610px;
+    width: 200px;
+  }
+  /* .tab1{
+    position: absolute;
+    top:390px;
+    left: 185px;
+    width: 120px;
+  }
+  .tab{
+    position: absolute;
+    top:335px;
+    left: 180px;
+    width: 130px;
+    cursor: pointer;
     
-      
-      #table {
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-      }
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
+  } */
 
-      td,
-      th {
-        border: 1px solid #0a0a0a;
-        text-align: center;
-        padding: 8px;
-      }
-
-      tr:nth-child(even) {
-        background-color: #c6fff3;
-      }
-      #table h2 {
-        text-align: center;
-        color: #0a0a0a;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .tab-button {
-        margin-top: 2rem;
-        background-color: cadetblue;
-        border: none;
-        color: darkmagenta;
-        width: 8rem;
-        height: 3rem;
-        border: 1px solid black;
-      }
-      .tab-button:hover {
-        background: cornflowerblue;
-        color: black;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-     #quest{
-       /*visibility: hidden;*/
-       position: absolute;
-      background-color: khaki!important;
-      left: 500px;
-      border: 2px black solid;
-      z-index:1;
-     } 
-
-      /*slider*/
-
-      .slider-container {
-        width: 34%;
-        position:absolute;
-       left:261px;
-        top:136px;
-      }
-      
-      .slider {
-        -webkit-appearance: none;
-        width: 100%;
-        height: 15px;
-        border-radius: 5px;
-        background: transparent;
-        outline: none;
-      
-        -webkit-transition: .2s;
-       
-      }
-      
-     
-      
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        height: 52px;
-        width: 19px;
-       
-        background: url('../images/Scale2.0.png');
-        background-size: cover;
-        transform: scale(1.9) ;
-        cursor: pointer;
-      }
-      
-      .slider::-moz-range-thumb {
-        height: 52px;
-        width: 19px;
-       
-        background: url('../images/Scale2.0.png');
-        background-size: cover;
-        transform: scale() ;
-        cursor: pointer;
-      }
+  
 
 
-      .range-slider {
-        position: absolute;
-        top:90;
-        right:170;
-      }
+ 
 
-        .input-range {
-          -webkit-appearance: none;
-          height: 100px;
-          border-radius: 0;
-          background: #ccc;
-          outline: none;
-       
-          -webkit-appearance: slider-vertical; /* WebKit */
-          
-        }
-      
-      
-     
-      ::-moz-range-track {
-          background: #ccc;
-          border: 0;
-      }
-    
-      
+
+
+
+
+
+  .left-section {
+    width: 30%;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .step-container {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content; /* or a fixed width like 400px */
+    margin: 20px auto;
+  }
+  #step-text {
+    margin-bottom: 20px;
+  }
+  
+  #next-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #1f4287;
+    border: none;
+  }
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  #speaker-btn {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .instruction-box {
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }    
+  
+
+
+
+
+
+  
+  .tapbtn {
+    width: 150px;
+    height: 80px;
+    background-color: #3c78d8;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+   top: 75%;
+  }
+  
+  .tab-label {
+    position: absolute;
+    top: 5px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .motor-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+  
+  .tab-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 1;
+  }
+  
+  .tab-button.red {
+    background-color: red;
+  }
+  
+  .tab-button.green {
+    background-color: green;
+  }
+ 
+  .measurement-container {
+    position: absolute;
+    top: 60%; 
+    left: 20%; 
+    width: 50px;
+    height: 170px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: flex-end;
+    z-index: 5;
+  }
+  .waterlevel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 153, 255, 0.6);
+    transition: height 2s ease-in-out;
+  }
+  
+ 
+  
+  .motor-btn {
+    position: absolute;
+    top: 78%; /* adjust this according to your layout */
+    left: 53%; /* adjust this according to your layout */
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+
+
+
+
+
+
+  
+  .utube {
+    width: 80px;
+    height: 180px;
+    border: 20px solid rgba(180, 180, 180, 0.5); 
+    border-top: none;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(2px); 
+    position: absolute;
+    left: 650px; 
+    top: 230px;
+    z-index: 2;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2); 
+  }
+  
+ .utubeWater {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: blue; /* Water color */
+  transition: height 0.5s ease;
+}
+
+.clear-container {
+  position: fixed;         /* So it stays on screen while scrolling */
+  top: 20px;
+  right: 20px;
+  z-index: 999;            /* Stay on top of other elements */
+}
+
+.clear-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #c0392b;
+}
