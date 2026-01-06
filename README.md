@@ -47,4 +47,3 @@ SrNo | Name | Faculty or Student | Department| Institute | Email id
 5 | Dr. Sanjeev Kumar Shrivastava  | Faculty | Physics | Bundelkhand University, Jhansi | sksphys7@gmail.com
 6 | Nikita Pandey | Student | Computer Science & Engineering | Institute of Engineering & Technology, Bundelkhand University, Jhansi | nikitapandey9190@gmail.com
 
-
