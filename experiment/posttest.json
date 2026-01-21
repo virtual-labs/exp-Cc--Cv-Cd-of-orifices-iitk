@@ -9,12 +9,7 @@
         "c": "=1",
         "d": "=0"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -26,12 +21,7 @@
         "c": "Equal",
         "d": "No C<sub>d</sub>"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -43,12 +33,7 @@
         "c": "at entry and exit of orifice meter",
         "d": "none of the above"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+     
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
@@ -60,12 +45,7 @@
         "c": "Meter tube",
         "d": "Converging cone"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
@@ -77,12 +57,7 @@
         "c": "Larger to pipe dia",
         "d": "none of above"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     }
