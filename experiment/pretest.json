@@ -9,12 +9,7 @@
         "c": "Density",
         "d": "Viscosity"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 1",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -26,12 +21,7 @@
         "c": "Pascals",
         "d": "None of above"
       },
-      "explanations": {
-        "a": "Explanation 2",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+     
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -43,12 +33,7 @@
         "c": "Mass flow meter",
         "d": "Positive displacement meter"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
@@ -60,12 +45,7 @@
         "c": "Maximum pressure",
         "d": "Minimum pressure"
       },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -77,12 +57,7 @@
         "c": "Equal accuracy",
         "d": "More expensive"
       },
-      "explanations": {
-        "a": "Explanation 2",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     }
