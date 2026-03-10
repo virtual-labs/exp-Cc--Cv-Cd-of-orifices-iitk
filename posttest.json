@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The coefficient of discharge (Cd) for an orifice meter is typically",
+      "answers": {
+        "a": ">1",
+        "b": "<1",
+        "c": "=1",
+        "d": "=0"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Compare to venturi coefficient of discharge (C<sub>d</sub>) for an orifice meter is",
+      "answers": {
+        "a": "Greater",
+        "b": "Less",
+        "c": "Equal",
+        "d": "No C<sub>d</sub>"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The pressure difference in an orifice meter is measured:",
+      "answers": {
+        "a": "at vena contracta",
+        "b": "at throat",
+        "c": "at entry and exit of orifice meter",
+        "d": "none of the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following is NOT a component of an orifice meter?",
+      "answers": {
+        "a": "Orifice plate",
+        "b": "Pressure tapping",
+        "c": "Meter tube",
+        "d": "Converging cone"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The orifice diameter is generally kept as:",
+      "answers": {
+        "a": "Same to pipe dia",
+        "b": "Smaller to pipe dia",
+        "c": "Larger to pipe dia",
+        "d": "none of above"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}

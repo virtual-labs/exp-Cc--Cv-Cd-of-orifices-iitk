@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. An orifice meter is used to measure:",
+      "answers": {
+        "a": "Temperature",
+        "b": "flowrate",
+        "c": "Density",
+        "d": "Viscosity"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Principle behind orificemeter",
+      "answers": {
+        "a": "Archimedes",
+        "b": "Bernoulli’s",
+        "c": "Pascals",
+        "d": "None of above"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. An orifice meter is a type of:",
+      "answers": {
+        "a": "Variable head meter",
+        "b": "Variable area meter",
+        "c": "Mass flow meter",
+        "d": "Positive displacement meter"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The vena contracta is the point of:",
+      "answers": {
+        "a": "Minimum velocity",
+        "b": "Maximum velocity",
+        "c": "Maximum pressure",
+        "d": "Minimum pressure"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Compared to a venturi meter, an orifice meter is generally:",
+      "answers": {
+        "a": "Less accurate",
+        "b": "More accurate",
+        "c": "Equal accuracy",
+        "d": "More expensive"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
