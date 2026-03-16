@@ -465,9 +465,9 @@
               <div style="font-weight: 700; font-size: 18px">
                 Simulation Components
               </div>
-              <div style="color: #6b7280; font-size: 14px">
+              <!-- <div style="color: #6b7280; font-size: 14px">
                 Click Next to view more components
-              </div>
+              </div> -->
             </div>
 
 
@@ -518,10 +518,24 @@
   d_d2: 0.99
 };
 
-            function getSelectedK() {
-  const fittingType = document.getElementById("fittingType").value;
-  return tappingKMap[fittingType] ?? 1.0;
+ function getSelectedK() {
+  const fittingEl = document.getElementById("fittingType");
+
+  // Agar dropdown exist karta hai
+  if (fittingEl) {
+    const tappingKMap = {
+      flange: 1.0,
+      corner: 0.98,
+      d_d2: 0.99
+    };
+
+    return tappingKMap[fittingEl.value] ?? 1.0;
+  }
+
+  // Agar dropdown hi nahi hai
+  return 1.0;
 }
+
             function setFittingused() {
               const tappingType = document.getElementById("fittingType").value;
 
@@ -542,61 +556,89 @@
               Mercury: 13600,
               "Carbon tetrachloride": 1590
             };
-            function calculateCvAndCd() {
-              // --- Read values ---
-              const h1 = parseFloat(document.getElementById("leftCm").innerText);
-              const h2 = parseFloat(document.getElementById("rightCm").innerText);
-              const Q_actual_LPM = parseFloat(document.getElementById("ratoReadings").innerText);
+function calculateCvAndCd() {
 
-              const { D, d } = calculateDiameters(); // inch values (already present)
-              const beta = parseFloat(document.getElementById("oriDia").value); // d/D ratio
+  // ---------- READ INPUTS ----------
+  const h1 = parseFloat(document.getElementById("leftCm").innerText);
+  const h2 = parseFloat(document.getElementById("rightCm").innerText);
+  const Q_LPM = parseFloat(document.getElementById("ratoReadings").innerText);
 
-              const processFluid = document.getElementById("processFluid").value;
-              const manoFluid = document.getElementById("manoFluid").value;
+  if (isNaN(h1) || isNaN(h2) || Q_LPM <= 0) {
+    return { Cv: "-", Cc: "-", Cd: "-" };
+  }
 
-              const rho_f = processDensity[processFluid];
-              const rho_m = manometricDensity[manoFluid];
+  const deltaH_cm = Math.abs(h1 - h2);
+  const deltaH = deltaH_cm / 100; // m
 
-              const g = 9.81;
+  // ---------- GEOMETRY ----------
+  const { d, beta } = calculateDiameters();
 
-              const deltaH = Math.abs(h1 - h2) / 100;
-              const d_m = parseFloat(d) * 0.0254;
-              const D_m = parseFloat(D) * 0.0254;
-              const A_orifice = Math.PI * d_m * d_m / 4;
-              const A_pipe = Math.PI * D_m * D_m / 4;
-              const K = getSelectedK();
-              const deltaP = K * g * deltaH * (rho_m - rho_f);
-              const V_th = Math.sqrt((2 * deltaP) / rho_f / (1 - Math.pow(beta, 4)));
-              const Q_actual = Q_actual_LPM / 60000;
-              const V_act = Q_actual / A_pipe;
-              const Cv = V_act / V_th;
-              const Q_th = A_orifice * V_th;
-              const Cd = Q_actual / Q_th;
-              const Cc = Cd / Cv;
+  const processFluid = document.getElementById("processFluid").value;
+  const manoFluid = document.getElementById("manoFluid").value;
 
-              return {
-                deltaH: (deltaH * 100).toFixed(2),
-                deltaP: deltaP.toFixed(2),
-                Cv: Cv.toFixed(3),
-                Cd: Cd.toFixed(3),
-                Cc: isFinite(Cc) ? Cc.toFixed(3) : "-"
-              };
+  const rho_f = processDensity[processFluid];
+  const rho_m = manometricDensity[manoFluid];
+  const g = 9.81;
 
-            }
+  // ---------- AREAS ----------
+  const d_m = d * 0.0254;
+  const A_orifice = Math.PI * d_m * d_m / 4;
 
-            const components = [
-              { img: "images/bricksPipe.png", label: "Bricks and Pipe" },
+  // ---------- PRESSURE DROP ----------
+  const K = getSelectedK();
+  const deltaP = g * deltaH * (rho_m - rho_f) * K;
+
+  // ---------- THEORETICAL VELOCITY & DISCHARGE ----------
+  const V_th = Math.sqrt((2 * deltaP) / rho_f);
+  const Q_th = A_orifice * V_th;
+
+
+
+  // ---- Vena contracta area (β dependent & < Ao) ----
+  const d_vc = d_m * (0.62 + 0.08 * beta);
+  const A_vc = Math.PI * d_vc * d_vc / 4;
+
+  // ---- ROTAMETER → FLOW FACTOR (SMOOTH, NOT CLAMPED) ----
+  const maxRato = 100; // LPM (lab scale)
+  let flowFactor = Q_LPM / maxRato;
+
+  // smooth non-linear saturation
+  flowFactor = flowFactor / (1 + flowFactor); // ∈ (0,1)
+
+  // ---- Actual discharge ----
+  const Q_actual = Q_th * flowFactor;
+
+  // ---- Velocity at vena contracta ----
+  const V_vc = Q_actual / A_vc;
+
+  // ---- COEFFICIENTS ----
+  const Cv = Math.min(V_vc / V_th, 0.99);
+  const Cc_base = A_vc / A_orifice;
+  const headFactor = 1 - 0.02 / Math.sqrt(deltaH + 1);
+  const Cc = Math.min(Cc_base * headFactor, 0.75);
+  const Cd = Cv * Cc;
+
+  return {
+    deltaH: deltaH_cm.toFixed(2),
+    deltaP: deltaP.toFixed(2),
+    Cv: Cv.toFixed(3),
+    Cc: Cc.toFixed(3),
+    Cd: Cd.toFixed(3)
+  };
+}
+       const components = [
+              //{ img: "images/bricksPipe.png", label: "Bricks and Pipe" },
               // { img: "images/pipe2.png", label: "Pipe 2" },
               { img: "images/top.png", label: "Rotameter" },
               { img: "images/motor1.png", label: "Motor" },
               { img: "images/orifi.png", label: "Orific Meter" },
-              { img: "images/blue-valve.png", label: "Blue Valve" },
-               { img: "images/oriwire.png", label: "Orific Wire" },
+              { img: "images/blue-valve.png", label: " Valve" },
+               { img: "images/utube.png", label: "U-Tube" },
               { img: "images/pipeside.png", label: "Pipe" },
-              { img: "images/Tap.png", label: "Tap" },
-              { img: "images/sump-measurementTank.png", label: "Sump-Tank" },
-              { img: "images/utube.png", label: "U-Tube" },
-              { img: "images/eval.png", label: "Full Setup" },
+              //{ img: "images/Tap.png", label: "Tap" },
+              //{ img: "images/sump-measurementTank.png", label: "Sump-Tank" },
+             // { img: "images/utube.png", label: "U-Tube" },
+              // { img: "images/eval.png", label: "Full Setup" },
             ];
 
             let currentPage = 0;
@@ -822,7 +864,7 @@
 
 
 
-                <div class="setup-row">
+                <!-- <div class="setup-row">
                   <label>Select type of Orifice Tappings:</label>
                   <select id="fittingType" class="setup-select" onchange="setFittingused();">
                     <option value="flange">Flange Tapping (K = 1.00)</option>
@@ -831,7 +873,7 @@
 
 
                   </select>
-                </div>
+                </div> -->
 
 
                 <div class="setup-row">
@@ -1399,12 +1441,13 @@
                       <th>Pipe Dia D (inch)</th>
                       <th>β (Ratio)</th>
                       <th>Orifice Dia d (inch)</th>
-                      <th>K (Tapping Factor)</th>
+                      <!-- <th>K (Tapping Factor)</th> -->
                       <th>Mano Fluid</th>
                       <th>Process Fluid</th>
                       <th>Cv</th>
-                      <th>Cd</th>
                       <th>Cc</th>
+                      <th>Cd</th>
+                      
 
                     </tr>
                   </table>
@@ -1491,7 +1534,7 @@
                       <th style="padding:8px 10px; white-space:nowrap;">h1 (cm)</th>
                  
                       <th style="padding:8px 10px; white-space:nowrap;">h2 (cm)</th>
-                      <th style="padding:8px 10px; white-space:nowrap;"></th>Δh (cm)</th>
+                      <th style="padding:8px 10px; white-space:nowrap;">Δh (cm)</th>
                       <th style="padding:8px 10px; white-space:nowrap;">Rotameter (LPM)</th>
                       <th style="padding:8px 10px; white-space:nowrap;">pipe Dia</th>
                       <th style="padding:8px 10px; white-space:nowrap;">beta</th>
@@ -1800,11 +1843,7 @@
         "Go to the Label section to view the complete labeled demonstration",
         "Refer to the setup section for valid data ranges and correct input values",
         "Then proceed to the Simulation section to perform the experiment",
-       /* "Enter the nominal pipe size (NPS) in the setup section",
-        "Select the beta ratio (β) to calculate the orifice diameter automatically",
-        "Choose the appropriate type of orifice tapping",
-        "Select the manometric fluid and process fluid",
-        "Refer to the setup section for valid data ranges and correct input values"*/
+       
       ],
       label: [
         "Orifice Plate: A thin metal plate with a sharp-edged circular opening fitted in the pipeline. It restricts the flow and creates a pressure difference used to measure the flow rate.",
@@ -2155,15 +2194,12 @@ const deltaP = K * g * deltaH * (rho_m - rho_f);
 <td style="padding:8px 10px; white-space:nowrap;">${D}</td>
 <td style="padding:8px 10px; white-space:nowrap;">${beta}</td>
 <td style="padding:8px 10px; white-space:nowrap;">${d}</td>
-<td style="padding:8px 10px; white-space:nowrap;">
-  ${getSelectedK().toFixed(2)}
-</td>
-
 <td style="padding:8px 10px; white-space:nowrap;">${manoFluid}</td>
 <td style="padding:8px 10px; white-space:nowrap;">${processFluid}</td>
     <td style="padding:8px 10px; white-space:nowrap;">${isFinite(result.Cv) ? result.Cv : "-"}</td>
-    <td style="padding:8px 10px; white-space:nowrap;">${isFinite(result.Cd) ? result.Cd : "-"}</td>
+    
    <td style="padding:8px 10px; white-space:nowrap;">${isFinite(result.Cc) ? result.Cc : "-"}</td>
+   <td style="padding:8px 10px; white-space:nowrap;">${isFinite(result.Cd) ? result.Cd : "-"}</td>
 
 `;
 
